@@ -153,7 +153,7 @@ Gerrit это надстройка над GIT сервером. Он допол�
 
 # Литература
 
--   [GIT Concepts and Workflows](https://docs.google.com/presentation/d/1IQCRPHEIX-qKo7QFxsD3V62yhyGA9_5YsYXFOiBpgkk/view#slide=id.g4d6b1121f4_0_1320)
+-   [GIT Concepts and Workflows](https://github.com/pimiento/colaborate_webinar/blob/master/GIT_concepts_and_workflows.pdf)
 -   [GIT branches](https://learngitbranching.js.org/)
 -   [GIT workflows](https://www.atlassian.com/ru/git/tutorials/comparing-workflows)
 -   [GitHub flow](https://guides.github.com/introduction/flow/)

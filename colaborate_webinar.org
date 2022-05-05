@@ -109,7 +109,7 @@
   #+ATTR_LATEX: :width .7\textwidth
   [[file:gerrit-ui.png]]
 * Литература
-  - [[https://docs.google.com/presentation/d/1IQCRPHEIX-qKo7QFxsD3V62yhyGA9_5YsYXFOiBpgkk/view#slide=id.g4d6b1121f4_0_1320][GIT Concepts and Workflows]]
+  - [[https://github.com/pimiento/colaborate_webinar/blob/master/GIT_concepts_and_workflows.pdf][GIT Concepts and Workflows]]
   - [[https://learngitbranching.js.org/][GIT branches]]
   - [[https://www.atlassian.com/ru/git/tutorials/comparing-workflows][GIT workflows]]
   - [[https://guides.github.com/introduction/flow/][GitHub flow]]
