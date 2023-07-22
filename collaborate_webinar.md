@@ -1,3 +1,123 @@
+# Что внутри .git
+
+![img](dot_git_1.png)  
+
+
+# Что внутри .git
+
+![img](dot_git_2.png)  
+
+
+# Что внутри .git
+
+![img](dot_git_3.png)  
+
+
+# diff
+
+![img](dot_git_4.png)  
+
+
+# Commits
+
+![img](commits_1.png)  
+
+
+# Commits
+
+![img](commits_2.png)  
+
+
+# Commits
+
+![img](commits_3.png)  
+
+
+# Branches
+
+![img](branch_1.png)  
+
+
+# Merge
+
+![img](merge_1.png)  
+
+
+# Merge
+
+![img](merge_2.png)  
+
+
+# Merge
+
+![img](workflow.png)  
+
+
+# Pull Request
+
+![img](pull_request.png)  
+
+
+# Log
+
+```shell
+git log -p --graph
+# -p : показать правки
+# --graph : показать истории веток
+```
+
+
+# Кто виноват?
+
+
+## git blame
+
+![img](who.jpg)  
+
+
+# Кто виноват?
+
+
+## git blame
+
+```sh
+git blame <file>
+```
+
+[blame cPython](https://github.com/python/cpython/blame/main/README.rst)  
+
+
+# Совместная разработка
+
+![img](centralized_workflow.png)  
+
+
+# Совместная разработка
+
+![img](small-team-flow.png)  
+
+
+# GIT. что почитать?
+
+
+## Классика
+
+<div class="org-center">
+<p>
+<a href="https://git-scm.com/book/en/v2">GIT</a><br />
+</p>
+</div>
+
+
+## Советую (english)
+
+<div class="org-center">
+<p>
+<a href="https://vk.com/doc269223643_507620347?hash=f0724cb386dcc4da4a&amp;dl=62be737793f7e270db">GIT Concepts and Workflows</a><br />
+</p>
+</div>
+
+
 # Continuous Integration
 
 Все пушат прямо в *master* (*main*)  
@@ -209,4 +329,3 @@ Gerrit это надстройка над GIT сервером. Он допол�
 # Вопросы-ответы
 
 ![img](questions.jpg)
-
