@@ -1,2 +1,3 @@
 #!/usr/bin/env python
-print("Привет, МИР!")
+
+print("Привет Мир!")

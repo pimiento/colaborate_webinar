@@ -12,6 +12,70 @@
 #+LaTeX_HEADER: \lstset{basicstyle=\scriptsize\ttfamily}
 #+LATEX_HEADER: \usebackgroundtemplate{\includegraphics[width=.99\paperwidth,height=.99\paperheight]{bg.jpeg}}
 #+OPTIONS: \n:t ^:nil toc:nil
+* Что внутри .git
+  #+ATTR_LATEX: :width .6\textwidth
+  [[file:dot_git_1.png]]
+* Что внутри .git
+  #+ATTR_LATEX: :width .6\textwidth
+  [[file:dot_git_2.png]]
+* Что внутри .git
+  #+ATTR_LATEX: :width .6\textwidth
+  [[file:dot_git_3.png]]
+* diff
+  #+ATTR_LATEX: :width 1\textwidth
+  [[file:dot_git_4.png]]
+* Commits
+  [[file:commits_1.png]]
+* Commits
+  #+ATTR_LATEX: :width .6\textwidth
+  [[file:commits_2.png]]
+* Commits
+  #+ATTR_LATEX: :width .6\textwidth
+  [[file:commits_3.png]]
+* Branches
+  [[file:branch_1.png]]
+* Merge
+  #+ATTR_LATEX: :width .6\textwidth
+  [[file:merge_1.png]]
+* Merge
+  #+ATTR_LATEX: :width .6\textwidth
+  [[file:merge_2.png]]
+* Merge
+   #+ATTR_LATEX: :width .8\textwidth
+   [[file:workflow.png]]
+* Pull Request
+  [[file:pull_request.png]]
+* Log
+  #+begin_src shell :exports code
+    git log -p --graph
+    # -p : показать правки
+    # --graph : показать истории веток
+  #+end_src
+* Кто виноват?
+** git blame
+   #+ATTR_LATEX: :width .3\textwidth
+  [[file:who.jpg]]
+* Кто виноват?
+** git blame
+   #+BEGIN_SRC sh :exports code
+     git blame <file>
+   #+END_SRC
+   [[https://github.com/python/cpython/blame/main/README.rst][blame cPython]]
+* Совместная разработка
+  #+ATTR_LATEX: :width .7\textwidth
+ [[file:centralized_workflow.png]]
+* Совместная разработка
+  #+ATTR_LATEX: :width .4\textwidth
+  [[file:small-team-flow.png]]
+* GIT. что почитать?
+** Классика
+ #+BEGIN_CENTER
+ [[https://git-scm.com/book/en/v2][GIT]]
+ #+END_CENTER
+** Советую (english)
+ #+BEGIN_CENTER
+ [[https://vk.com/doc269223643_507620347?hash=f0724cb386dcc4da4a&dl=62be737793f7e270db][GIT Concepts and Workflows]]
+ #+END_CENTER
 * Continuous Integration
   Все пушат прямо в /master/ (/main/)
   #+BEGIN_SRC sh :exports code
@@ -130,10 +194,14 @@
   [[file:slack.png]]
 * Избегаем блокировок
   1. В первую очередь пишем модели БД.
-     - Каждая модель в отдельном файле.
+     - Лучше всего, если каждая модель в отдельном файле.
      - Если модель для ForeignKey не существует, допустимо сделать /IntegerField/, затем заменить на /ForeignKey/.
   2. Если ваша ветка живет более 4-х часов, то вливайте изменения из основной ветки дважды в день. Все конфликты должны быть решены в вашей ветке!
   3. Поддерживайте тесную связь. Синхронизация Pull Request-ов, правок кода сильно ускорит работу над проектом. Задача лида быть всегда в курсе что происходит с проектом, кто над чем работает.
+  4. Никогда не изменяйте историю
+     #+begin_src shell
+       git push -f
+     #+end_src
 * Командные процессы
   1. Ежедневные встречи (daily meetings). Если нужна помощь в проведении, приглашайте наставников.
   2. Планирование в начале проекта и по необходимости в ходе работы.
